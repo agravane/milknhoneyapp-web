@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MilkNHoney — Know what's really in it</title>
+<meta name="description" content="Scan any product's barcode to check ingredients for toxicity, active recalls, dietary compatibility, and price — food, cosmetics, cleaning supplies, and more.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>
+  :root {
+    --black: #0A0A0A;
+    --charcoal: #171717;
+    --charcoal-light: #1F1F1D;
+    --card-border: #2A2A2A;
+    --gold: #D4AF37;
+    --gold-bright: #F0CE5C;
+    --gold-dim: #8C7626;
+    --white: #F5F5F0;
+    --grey: #8C8C86;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--black);
+    color: var(--white);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--gold-bright); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header.top {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--card-border);
+  }
+  header.top .wrap { display: flex; align-items: center; gap: 12px; }
+  header.top img { width: 36px; height: 36px; border-radius: 8px; }
+  header.top span { font-weight: 700; font-size: 1.1rem; letter-spacing: 0.02em; }
+  .hero {
+    text-align: center;
+    padding: 72px 0 56px;
+    background: linear-gradient(180deg, rgba(212,175,55,0.10), transparent 60%);
+  }
+  .hero img.mark { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 24px; }
+  .hero h1 {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    margin: 0 0 16px;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold), var(--gold-dim));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero p.sub { color: var(--grey); font-size: 1.1rem; max-width: 560px; margin: 0 auto 32px; }
+  .badge {
+    display: inline-block;
+    border: 1px solid var(--gold-dim);
+    color: var(--gold-bright);
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  section.features { padding: 48px 0; }
+  section.features h2 { text-align: center; margin-bottom: 8px; }
+  section.features p.lead { text-align: center; color: var(--grey); margin-bottom: 40px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--charcoal);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .card h3 { margin: 0 0 8px; color: var(--gold-bright); font-size: 1.02rem; }
+  .card p { margin: 0; color: var(--grey); font-size: 0.94rem; }
+  section.download {
+    text-align: center;
+    padding: 48px 0 64px;
+  }
+  section.download h2 { margin-bottom: 12px; }
+  section.download p { color: var(--grey); margin-bottom: 0; }
+  footer {
+    border-top: 1px solid var(--card-border);
+    padding: 28px 0;
+    color: var(--grey);
+    font-size: 0.88rem;
+  }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
+  footer nav a { color: var(--grey); text-decoration: none; margin-right: 18px; }
+  footer nav a:hover { color: var(--gold-bright); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <img src="assets/favicon.png" alt="">
+    <span>MilkNHoney</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="badge">Pre-launch</div>
+    <img class="mark" src="assets/favicon.png" alt="MilkNHoney logo">
+    <h1>Know what's really in it.</h1>
+    <p class="sub">Scan any product's barcode — food, cosmetics, cleaning supplies, pharmaceuticals, personal care — and get an instant safety score, active recall check, and dietary compatibility, right on your phone.</p>
+  </div>
+</div>
+
+<section class="features">
+  <div class="wrap">
+    <h2>What MilkNHoney does</h2>
+    <p class="lead">Works offline. No account required for the core experience.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Universal scanning</h3>
+        <p>Barcode, QR code, or a photo of the label — for any product with a UPC/GTIN, not just food.</p>
+      </div>
+      <div class="card">
+        <h3>Ingredient safety score</h3>
+        <p>Every ingredient checked against a toxicity database, scored 0–100, entirely on-device.</p>
+      </div>
+      <div class="card">
+        <h3>Live recall checks</h3>
+        <p>Cross-referenced against FDA and other safety databases the moment you scan.</p>
+      </div>
+      <div class="card">
+        <h3>Dietary &amp; allergen matching</h3>
+        <p>Vegan, vegetarian, gluten-free, dairy-free, nut-free, paleo, and more — checked against the real ingredient list.</p>
+      </div>
+      <div class="card">
+        <h3>Price comparison</h3>
+        <p>Compare prices across retailers and shop out to Instacart when you're ready to buy.</p>
+      </div>
+      <div class="card">
+        <h3>Shopping lists</h3>
+        <p>Build a list from your scans, check items off, and estimate your total before you go.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="download">
+  <div class="wrap">
+    <h2>Coming soon</h2>
+    <p>MilkNHoney is in final testing ahead of its App Store and Google Play release.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://github.com/agravane/Milkandhoney/issues">Support</a>
+    </nav>
+    <span>&copy; 2026 MilkNHoney</span>
+  </div>
+</footer>
+
+</body>
+</html>

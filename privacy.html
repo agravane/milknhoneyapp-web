@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MilkNHoney</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/legal.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;">
+      <img src="assets/favicon.png" alt="">
+      <span>MilkNHoney</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 2026-08-01</p>
+
+    <p>MilkNHoney ("the app") is developed by MilkNHoney. This policy explains what the app
+    collects, what it shares, and why — in plain language, matching what the app itself tells you
+    in Settings → Privacy.</p>
+
+    <h2>Account information</h2>
+    <p>If you create a MilkNHoney account, we collect your email address and a securely hashed
+    password (via Supabase Authentication) solely to let you sign in. This is never sold, shared
+    with advertisers, or shared with any public database.</p>
+
+    <h2>Location</h2>
+    <p>The app requests location access only to search for nearby stores when you choose to report
+    a price. Your location is used live, in that moment, and is not stored on any server or shared
+    beyond that one search.</p>
+
+    <h2>Camera</h2>
+    <p>The app requests camera access only to scan barcodes, photograph an ingredients list for
+    reading, and photograph a price tag or receipt as proof when you report a price.</p>
+
+    <h2>What gets published publicly</h2>
+    <p>When you explicitly submit a price report, the price, product identifier, store location,
+    and photo you provide are sent to <a href="https://prices.openfoodfacts.org">Open Prices</a>
+    (an Open Food Facts project) and published publicly and permanently, under the
+    <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License 1.0</a> (data)
+    and <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (photos). Anyone
+    can view and reuse this data. Your MilkNHoney account email is never included in it. Please
+    don't include anything personal in the photo itself.</p>
+
+    <h2>Read-only third-party lookups</h2>
+    <p>The app looks up product, ingredient, recall, store, and pricing information from Open Food
+    Facts, USDA FoodData Central, FDA's openFDA, the Kroger API, OpenStreetMap, OCR.space, SerpApi,
+    and optional AI providers. These are read-only lookups, but the lookup input must be sent to
+    the provider you choose to use: barcodes are sent for product lookup, product names or barcodes
+    may be sent for ingredient and price lookup, ingredients photos may be sent to OCR.space, store
+    search text plus an approximate location bias may be sent to OpenStreetMap, a search term is
+    sent to SerpApi when you use "Compare Online" in the Pricing tab (SerpApi is a paid search API
+    — it does not receive your location, account, or scan history, only the text you search), and
+    optional AI photo/product lookups may send the captured photo to the AI provider.</p>
+    <p>If you paste a product link to check its price (in the "Report a Price" flow), the app
+    fetches that URL directly — no third-party intermediary — to read the page's own publicly
+    published price information. Only paste links you're comfortable this app requesting on your
+    behalf.</p>
+
+    <h2>Optional AI ingredients lookup</h2>
+    <p>If enabled (it is off by default), the app may send a product's name and brand to
+    Anthropic's Claude API to search the web for its ingredients when no other source has them. No
+    personal or account information is included in this request.</p>
+
+    <h2>Optional AI photo lookup</h2>
+    <p>If enabled (it is off by default), the app may send a captured product photo to Anthropic's
+    Claude API to identify visible products and prices. No account information is included, but you
+    should avoid including people, payment cards, addresses, receipts with personal details, or
+    anything else sensitive in the photo.</p>
+
+    <h2>Crash and error reporting</h2>
+    <p>The app uses Sentry to detect and diagnose crashes and errors — without it, we'd have no way
+    to know the app broke for you short of you telling us. This sends your IP address (used to
+    approximate your country/region for the crash report, standard for this kind of tooling) plus
+    technical details about the crash: device type, OS version, app version, and the code path
+    where the error happened. For a random sample of sessions (10%, or 100% of sessions where an
+    error occurred), Sentry also records a "session replay" — a reconstruction of what was on
+    screen, but with all text, images, and other content masked/blocked out by default, so this is
+    layout and navigation flow, not a literal recording of what you saw or typed. None of this is
+    linked to your MilkNHoney account email or password.</p>
+
+    <h2>Data we never share</h2>
+    <p>Your account email, password, and on-device scan history never leave your control except as
+    described above. Scan history is stored only on your device.</p>
+
+    <h2>Contact</h2>
+    <p>Website: <a href="https://milknhoneyapp.com">milknhoneyapp.com</a></p>
+    <p>Questions about this policy: <a href="https://github.com/agravane/Milkandhoney/issues">open
+    an issue on GitHub</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+</footer>
+
+</body>
+</html>
