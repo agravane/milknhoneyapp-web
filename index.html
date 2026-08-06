@@ -59,6 +59,33 @@
     border-radius: 999px;
     margin-bottom: 20px;
   }
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.98rem;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--black);
+  }
+  .btn-primary:hover { background: var(--gold-bright); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--gold-bright);
+    border-color: var(--gold-dim);
+  }
+  .btn-secondary:hover { border-color: var(--gold-bright); }
   section.features { padding: 48px 0; }
   section.features h2 { text-align: center; margin-bottom: 8px; }
   section.features p.lead { text-align: center; color: var(--grey); margin-bottom: 40px; }
@@ -80,7 +107,7 @@
     padding: 48px 0 64px;
   }
   section.download h2 { margin-bottom: 12px; }
-  section.download p { color: var(--grey); margin-bottom: 0; }
+  section.download p { color: var(--grey); margin-bottom: 24px; }
   footer {
     border-top: 1px solid var(--card-border);
     padding: 28px 0;
@@ -107,6 +134,10 @@
     <img class="mark" src="assets/favicon.png" alt="MilkNHoney logo">
     <h1>Know what's really in it.</h1>
     <p class="sub">Scan any product's barcode — food, cosmetics, cleaning supplies, pharmaceuticals, personal care — and get an instant safety score, active recall check, and dietary compatibility, right on your phone.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="https://github.com/agravane/MilkNHoneyApp/releases/latest">Download latest</a>
+      <a class="btn btn-secondary" href="https://github.com/agravane/MilkNHoneyApp">View on GitHub</a>
+    </div>
   </div>
 </div>
 
@@ -145,8 +176,11 @@
 
 <section class="download">
   <div class="wrap">
-    <h2>Coming soon</h2>
-    <p>MilkNHoney is in final testing ahead of its App Store and Google Play release.</p>
+    <h2>Get the app</h2>
+    <p>Android APK is available now from GitHub Releases. App Store and Google Play are coming soon.</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="https://github.com/agravane/MilkNHoneyApp/releases/latest">Download APK</a>
+    </div>
   </div>
 </section>
 
@@ -155,7 +189,8 @@
     <nav>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>
-      <a href="https://github.com/agravane/Milkandhoney/issues">Support</a>
+      <a href="https://github.com/agravane/MilkNHoneyApp/issues">Support</a>
+      <a href="mailto:hello@milknhoneyapp.com">hello@milknhoneyapp.com</a>
     </nav>
     <span>&copy; 2026 MilkNHoney</span>
   </div>
